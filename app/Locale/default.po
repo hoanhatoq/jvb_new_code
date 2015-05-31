@@ -1,0 +1,140 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-02-11 03:13+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: View/Layouts/default.ctp:64
+msgid "logo_jvb.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:65
+msgid "img_slogan.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:91
+msgid "fl_jp.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:92
+msgid "fl_vi.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:94
+msgid "fl_en.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:103
+msgid "Trang chủ"
+msgstr ""
+
+#: View/Layouts/default.ctp:106
+msgid "Giới thiệu"
+msgstr ""
+
+#: View/Layouts/default.ctp:109
+msgid "Dịch vụ"
+msgstr ""
+
+#: View/Layouts/default.ctp:112
+msgid "Tin tức"
+msgstr ""
+
+#: View/Layouts/default.ctp:115
+msgid "Tuyển dụng"
+msgstr ""
+
+#: View/Layouts/default.ctp:118
+msgid "Liên hệ"
+msgstr ""
+
+#: View/Layouts/default.ctp:130
+msgid "Phát triển ứng dụng Mobile"
+msgstr ""
+
+#: View/Layouts/default.ctp:131
+msgid "Công ty chúng tôi cung cấp dịch vụ phát triển ứng dụng Mobile trên nền iOS và Android.\nĐội ngũ nhân viên của chúng tôi tư vấn và phát triển dựa trên nhu cầu thực tế của khách hàng."
+msgstr ""
+
+#: View/Layouts/default.ctp:133;146;159
+msgid "Xem thêm"
+msgstr ""
+
+#: View/Layouts/default.ctp:137
+msgid "banner2.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:144
+msgid "Phát triển ứng dụng Web"
+msgstr ""
+
+#: View/Layouts/default.ctp:145
+msgid "Công ty JVB Vietnam cung cấp dịch vụ thiết kế và phát triển ứng dụng Web"
+msgstr ""
+
+#: View/Layouts/default.ctp:150
+msgid "banner1.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:157
+msgid "Nội dung số"
+msgstr ""
+
+#: View/Layouts/default.ctp:158
+msgid "Công ty JVB Vietnam số hóa thông tin về văn hóa, môi trường kinh doanh tại Việt Nam để quảng bá cho khách hàng Nhật"
+msgstr ""
+
+#: View/Layouts/default.ctp:163
+msgid "banner3.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:176
+msgid "Tuyển phiên dịch viên tiếng Nhật"
+msgstr ""
+
+#: View/Layouts/default.ctp:178
+msgid "Tuyển lập trình viên Mobile"
+msgstr ""
+
+#: View/Layouts/default.ctp:200
+msgid "Công ty cổ phần JVB Việt Nam"
+msgstr ""
+
+#: View/Layouts/default.ctp:201
+msgid "Số 32-34, Đường Đặng Văn Ngữ, Phường Phương Liên, Quận Đống Đa, Thành phố Hà Nội, Việt Nam"
+msgstr ""
+
+#: View/Layouts/default.ctp:210
+msgid "Copyright©2014 JVB Vietnam. All rights reserved."
+msgstr ""
+
+msgid "Qui trình làm sản phẩm"
+msgstr ""
+
+msgid "Đặc điểm của công ty JVBvietnam"
+msgstr ""
+
+msgid "web_vi.png"
+msgstr ""
+
+msgid "app_vi.png"
+msgstr ""
+
+msgid "select_vi.png"
+msgstr ""
+
+msgid "Ứng dụng"
+msgstr ""
+
+msgid "Website"
+msgstr ""

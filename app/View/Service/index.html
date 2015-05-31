@@ -1,0 +1,61 @@
+<html>
+	<title></title>
+	<head></head>
+	<body>
+	<script type="text/javascript">
+        $(document).ready(function(){
+	        $('.bxslider').bxSlider({
+	            speed: 700,
+	            mode: 'fade',
+	            infiniteLoop: true,
+	            hideControlOnEnd: true,
+	            controls: true,
+	            pager: false,
+	            auto: true
+	        });
+        });
+    </script>
+		<div class="banner">
+			<div class="wrapper_banner">
+			    <ul class="bxslider">
+			        <li>
+						<!--<div class="service_slide"> -->
+				            <div class="title"><?php //echo __('Phát triển ứng dụng Mobile');?></div>
+				            <?php //echo __('Công ty chúng tôi cung cấp dịch vụ phát triển ứng dụng Mobile trên nền iOS và Android.<br/>Đội ngũ nhân viên của chúng tôi tư vấn và phát triển dựa trên nhu cầu thực tế của khách hàng.');?>
+				           	<div class="readmore"><a href="#"><?php //echo __('Xem thêm');?></a></div>
+						<!--</div> -->
+			            <div class="im_slide">
+			                <?php 
+			                    echo $this->Html->image(__('digital_content.png'), array('class'=> 'lazy', 'alt' => 'welcome')); 
+			                ?>
+			            </div>
+			        </li>
+			        <li>
+						<!--<div class="service_slide"> -->
+				            <div class="title"><?php //echo __('Phát triển ứng dụng Web');?></div>
+				            <?php //echo __('Công ty JVB Vietnam cung cấp dịch vụ thiết kế và phát triển ứng dụng Web');?>
+				           	<div class="readmore"><a href="#"><?php //echo __('Xem thêm');?></a></div>
+						<!--</div> -->
+			            <div class="im_slide">
+			               	<?php 
+			                    echo $this->Html->image(__('web_application.png'), array('class'=> 'lazy', 'alt'=> 'banner_web_application')); 
+			                ?>
+			            </div>
+			        </li>
+			        <li>
+						<!--<div class="service_slide"> -->
+				            <div class="title"><?php //echo __('Nội dung số');?></div>
+				            <?php //echo __('Công ty JVB Vietnam số hóa thông tin về văn hóa, môi trường kinh doanh tại Việt Nam để quảng bá cho khách hàng Nhật');?>
+				           	<div class="readmore"><a href=""><?php //echo __('Xem thêm');?></a></div>
+						<!--</div> -->
+			            <div class="im_slide">
+			                <?php 
+			                    echo $this->Html->image(__('mobile_apps.png'), array('class'=> 'lazy', 'alt'=> 'banner_mobile')); 
+			                ?>
+			            </div>
+			        </li>
+			    </ul>
+		    </div>
+		</div>	
+	</body>
+</html>

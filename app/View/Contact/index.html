@@ -1,0 +1,78 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<div class="content">
+    <div class="center_f">
+        <div class="p_contact">
+            <div id="flashMessages">
+                <?php echo $this->Session->flash() ;?>
+            </div>        
+		</div>
+        <?php echo $this->Form->create('Contact',array('class'=>'contact','id' => 'contact', 'name' => 'contact-form'));?>
+        <div class="label_form"><?php echo __('Họ tên');?><font>(<span>*</span>)</font></div>
+        		<?php echo $this->Form->input('name',array('label' =>false,'class'=>'an','required' => true));?>	
+        	<div class="clear"></div>     
+        <div class="label_form"><?php echo __('Điện thoại');?><font>(<span>*</span>)</font></div>
+        		<?php echo $this->Form->input('phone',array('label' =>false,'required' => true, 'class' => 'phone'));?>
+        	<div class="clear"></div>
+            <div class="label_form"><?php echo __('Email');?><font>(<span>*</span>)</font></div>
+        		<?php echo $this->Form->input('email',array('label' =>false,'required' => true));?>                          
+        	<div class="clear"></div>
+            <div class="label_form"><?php echo __('Tiêu đề');?><font>(<span>*</span>)</font></div>
+        		<?php echo $this->Form->input('subject',array('label' => false,'class'=>'an','required' => true));?> 
+        	<div class="clear"></div>
+        	<label><?php echo __('Nội dung:');?></label>
+        	   <?php echo $this->Form->input('content',array('label' =>false,'class' =>'an','type' => 'textarea'));?>
+        	<div class="clear"></div>
+			<div class="required_text"><span>(*)</span><?php echo __('Bắt buộc nhập')?></div>
+        	<?php echo $this->Form->input('token',array('type' => 'hidden','value' =>$token));?>
+			<?php echo $this->Form->button('Gửi ngay',array('label' =>false,'type' => 'button','class'=>'input_submit'));?>
+			<?php echo $this->Form->button('Làm lại',array('label' =>false,'type' => 'reset','class'=>'input_reset'));?>
+		<?php echo $this->Form->end(); ?>
+	</div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#ContactName").val('');
+        $("#ContactPhone").val('');
+        $("#ContactEmail").val('');
+        $("#ContactSubject").val('');
+        $("#ContactContent").val('');
+        $('.input_submit').click(function(){
+            $("#contact").submit();
+        });
+    });
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#contact").validate({
+			rules: {
+		        "data[Contact][email]": {
+		            required:true,
+		            email:true
+		        }, 
+                
+                "data[Contact][phone]": {
+		            required:true,
+		            number: true 
+		        },
+		    },
+			messages : {
+				"data[Contact][name]" : {
+					required : "Hãy nhập vào họ tên"
+				},
+				"data[Profile][email_add]" : {
+					required : "Hãy nhập vào Email ",
+					email : " Hãy nhập đúng định dạng email"
+					
+				},
+				"data[Contact][phone]" : {
+					required : " Hãy nhập vào số điên thoại ",
+                    number : "Vui lòng nhập vào số"
+				},
+				"data[Contact][subject]" : {
+					required : "Hãy nhập vào tiêu đề "
+				},    
+			}
+		});
+	});
+</script>

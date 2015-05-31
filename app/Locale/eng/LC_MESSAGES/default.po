@@ -1,0 +1,200 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-02-11 03:13+0100\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: View/Layouts/default.ctp:64
+msgid "logo_jvb.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:65
+msgid "img_slogan.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:91
+msgid "fl_jp.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:92
+msgid "fl_vi.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:94
+msgid "fl_en.jpg"
+msgstr ""
+
+#: View/Layouts/default.ctp:103
+msgid "Trang chủ"
+msgstr "Home"
+
+#: View/Layouts/default.ctp:106
+msgid "Giới thiệu"
+msgstr "Abouts us"
+
+#: View/Layouts/default.ctp:109
+msgid "Dịch vụ"
+msgstr "Services"
+
+#: View/Layouts/default.ctp:112
+msgid "Tin tức"
+msgstr "News"
+
+#: View/Layouts/default.ctp:115
+msgid "Tuyển dụng"
+msgstr "Recruitment"
+
+#: View/Layouts/default.ctp:118
+msgid "Liên hệ"
+msgstr "Contact us"
+
+#: View/Layouts/default.ctp:130
+msgid "Phát triển ứng dụng Mobile"
+msgstr "Mobile Apps"
+
+#: View/Layouts/default.ctp:131
+msgid "Công ty chúng tôi cung cấp dịch vụ phát triển ứng dụng Mobile trên nền iOS và Android.\nĐội ngũ nhân viên của chúng tôi tư vấn và phát triển dựa trên nhu cầu thực tế của khách hàng."
+msgstr "Our company provides application development services on the iOS and Android Mobile. The staff of our consulting and development based on the actual needs of the customer."
+
+#: View/Layouts/default.ctp:133;146;159
+msgid "Xem thêm"
+msgstr "view more"
+
+#: View/Layouts/default.ctp:137
+msgid "banner2.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:144
+msgid "Phát triển ứng dụng Web"
+msgstr "Web Applications"
+
+#: View/Layouts/default.ctp:145
+msgid "Công ty JVB Vietnam cung cấp dịch vụ thiết kế và phát triển ứng dụng Web"
+msgstr "The company JVB Vietnam service providers to design and develop Web applications"
+
+#: View/Layouts/default.ctp:150
+msgid "banner1.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:157
+msgid "Nội dung số"
+msgstr "Digital Contents"
+
+#: View/Layouts/default.ctp:158
+msgid "Công ty JVB Vietnam số hóa thông tin về văn hóa, môi trường kinh doanh tại Việt Nam để quảng bá cho khách hàng Nhật"
+msgstr "The company JVB Vietnam digitized information on culture, business environment in Vietnam to promote Japanese customers"
+
+#: View/Layouts/default.ctp:163
+msgid "banner3.png"
+msgstr ""
+
+#: View/Layouts/default.ctp:176
+msgid "Tuyển phiên dịch viên tiếng Nhật"
+msgstr "Careers Japanese interpreters"
+
+#: View/Layouts/default.ctp:178
+msgid "Tuyển lập trình viên Mobile"
+msgstr "Careers programmer Mobile"
+
+#: View/Layouts/default.ctp:200
+msgid "Công ty cổ phần JVB Việt Nam"
+msgstr "JVB VIETNAM Joint Stock Company"
+
+#: View/Layouts/default.ctp:201
+msgid "Số 32-34, Đường Đặng Văn Ngữ, Phường Phương Liên, Quận Đống Đa, Thành phố Hà Nội, Việt Nam"
+msgstr "32-34 Đang Van Ngu, Đong Đa District, Ha Noi City, Vietnam"
+
+#: View/Layouts/default.ctp:210
+msgid "Copyright©2014 JVB Vietnam. All rights reserved."
+msgstr ""
+
+msgid "Qui trình làm sản phẩm"
+msgstr "Product Development Flow"
+
+msgid "Đặc điểm của công ty JVBvietnam"
+msgstr "JVB vietnam's special features"
+
+msgid "web_vi.png"
+msgstr "web_en.png"
+
+msgid "app_vi.png"
+msgstr "app_en.png"
+
+msgid "select_vi.png"
+msgstr "select_en.png"
+
+msgid "Ứng dụng"
+msgstr "Application"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Ứng dụng Web"
+msgstr "Web Applications"
+
+msgid "Ứng dụng Mobile"
+msgstr "Mobile Applications"
+
+msgid "Ứng dụng Mobile"
+msgstr "Mobile Applications"
+
+msgid "Lên kế hoạch làm việc"
+msgstr "Planning to work"
+
+msgid "Giới thiệu tóm tắt về case study full project, labo..."
+msgstr "Brief Introduction case study on the full project, labo ..."
+
+msgid "Giới thiệu tóm tắt về case sutdy web, smart - phone application..."
+msgstr "Brief Introduction case study on web, smartphone application ..."
+
+msgid "Xem Thêm"
+msgstr "Read more"
+
+msgid "Số 32-34, Đường Đặng Văn Ngữ, Phường Phương Liên"
+msgstr "No. 32-34, Dang Van Ngu Street, Phuong Lien"
+
+msgid "Quận Đống Đa, Thành phố Hà Nội, Việt Nam"
+msgstr "Dong Da District, Hanoi City, Vietnam"
+
+msgid "Công ty JVB Việt Nam đang có nhu cầu tuyển phiên dịch viên tiếng Nhật có trình độ tương đương N2. . ."
+msgstr "The company JGC Vietnam needs are recruiting interpreters Japanese equivalent level N2. . ."
+
+msgid "なぜJVBベトナムを選びます"
+msgstr "Why choose JVB Vietnam"
+
+msgid "ニュース"
+msgstr "News"
+
+msgid "接続"
+msgstr "Contact"
+
+msgid "ワークフロー製品"
+msgstr "Product Process"
+
+msgid "Họ tên"
+msgstr "Name"
+
+msgid "Điện thoại"
+msgstr "Tell"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Tiêu đề"
+msgstr "Title"
+
+msgid "Nội dung:"
+msgstr "Content"
+
+msgid "Bắt buộc nhập"
+msgstr "Required"
