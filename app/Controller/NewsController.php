@@ -15,14 +15,15 @@
 
 		public function index()
 		{
-// 			$lang_code = $this->params->language;
-		
-// 			if($lang_code == ''){
-// 			   $lang_code = 'jp';
-// 			}
+ 			$lang_code = $this->params->language;
+ 			pr($lang_code);
+			
+			if($lang_code == ''){
+			   $lang_code = 'jp';
+			}
 
-// 			$data = $this->News->getAll($lang_code);
-// 			$this->set('data', $data);
+			$data = $this->News->getAll($lang_code);
+			$this->set('data', $data);
 		
 		}
 

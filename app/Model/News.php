@@ -5,33 +5,32 @@ App::uses('AppModel', 'Model');
 		
 		/*Khai bao su dung bang*/
 
-		public $useTable= "news_tbl";
+		public $useTable= "news";
 
 		/*truong khoa trinh cua bang*/
 
-		public $primaryKey = "news_id"; 
+		public $primaryKey = "id"; 
 
-		public function getAll($lang_code){		
-			$sql = ('
-				select * from news_tbl as News 
-				INNER JOIN expresion_tbl as Expresion 
-				on News.title_news_id = Expresion.title_content_id or News.content_news_id =Expresion.title_content_id 
-				WHERE lang_code = "'.$lang_code.'"
-				order by News.create_time ASC
-				');
-			
-			$coupons = $this->query($sql);
+		public function getAll($lang_code)
+		{		
+			$sql2 = (' SELECT * FROM news
+						LEFT JOIN news_lang ON news.id_news = news_lang.id_news
+						LEFT JOIN lang ON news_lang.id_lang = lang.id_lang
+						WHERE
+						iso_code = "'.$lang_code.'"
+			');
+			$coupons = $this->query($sql2);
 			$news= array();
-			foreach ($coupons as $value){		
-				$news_id = $value['News']['news_id'];
-				$news[$news_id]['title_id']=$value['News']['news_id'];
-				if($value['News']['title_news_id'] == $value['Expresion']['title_content_id']){
-					$news[$news_id]['title'] = $value['Expresion']['value'];							
-				}
-				elseif ($value['News']['content_news_id'] == $value['Expresion']['title_content_id']) {
-					$news[$news_id]['content'] = $value['Expresion']['value'];					
-				}
-			}
+			foreach ($coupons as $value){
+				$news_id = $value['news']['id_news'];
+				$news[$news_id]['title_id']=$value['news']['id_news'];
+				$news[$news_id] = array(
+					'title_id' => $value['news']['id_news'],
+					'highlight' => $value['news']['highlight'],
+					'title' => 	$value['news_lang']['title'],
+					'content' => $value['news_lang']['content']
+				);		
+			}		
 			return $news;
 		}
 
@@ -53,7 +52,18 @@ App::uses('AppModel', 'Model');
 				}	
 			}
 			return $infoNews;
-
-
+		}
+		
+		public function cutString($text,$n)
+		{
+			$string = explode(" ", $text);
+			$a = $string;
+			$str = '';
+			if (count($a)>$n) {
+				for ($i=0; $i<$n; $i++) {
+					$str.=" " .$a[$i];
+				}
+			}
+			return $str."...";
 		}
 	}

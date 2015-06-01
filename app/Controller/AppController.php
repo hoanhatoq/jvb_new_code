@@ -4,7 +4,7 @@ App::uses('Controller', 'Controller');
 
 class AppController extends Controller {
     var $ext = '.html';
-    var $components =  array('Session');
+    var $components =  array('Session','Cookie');
 	public function beforeFilter(){
 		if(isset($this->params->language)){
 			$lang = $this->params->language;

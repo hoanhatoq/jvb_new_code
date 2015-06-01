@@ -1,3 +1,7 @@
+<?php		
+		App::import('Model', 'News');
+		$this->News = new News();	
+?>
 <html>
 	<title></title>
 	<head></head>
@@ -176,14 +180,36 @@
                 <?php echo $this->Html->image('title_news.png') ; ?>
             </div>
 			<div class="image_news"><?php echo $this->Html->image('image_news.png') ; ?></div>
-			<div class="title_news"><a href="" style="color: #585858;"><?php echo __('Tuyển phiên dịch viên tiếng Nhật');?></a></div>
-			<div class="info_news"><?php echo __('Công ty JVB Việt Nam đang có nhu cầu tuyển phiên dịch viên tiếng Nhật có trình độ tương đương N2. . .');?></div>
+			<div class="title_news">
+				<a href="" style="color: #585858;">
+					<?php foreach ($data as $value): ?>
+					<?php 
+						if($value['highlight'] == 1)
+							echo $value['title'];		
+					?>
+					<?php endforeach; ?>
+				</a>
+			</div>
+			
+			<div class="info_news">
+				<?php foreach ($data as $value): ?>
+					<?php 
+						if($value['highlight'] == 1)
+							echo substr($value['content'],0,120);
+					?>
+				<?php endforeach; ?>
+			</div>
+			
 			<ul class="recruitment">
-				<li class="li1"><a href="" style="color: #585858;">Tuyển phiên dịch viên tiếng nhật</a></li>
-				<li class="li1"><a href="" style="color: #585858;">Tuyển phiên dịch viên tiếng nhật</a></li>
-				<li class="li1"><a href="" style="color: #585858;">Tuyển phiên dịch viên tiếng nhật</a></li>
+			<?php $i=1; foreach ($data as $value): ?>
+			<li class="li1"><a href="" style="color: #585858;"><?php echo $value['title']; ?></a></li>
+			<?php 
+				$i++;
+				if ($i==4) break;
+			?>
+			<?php endforeach; ?>
 			</ul>
-			<div class="see_more1"><a href="" style="color: #585858;"><?php echo __('Xem Thêm') ;?></a></div>
+			<div class="see_more1"><a href="<?php echo $this->Html->url(array('controller' => 'news', 'action' => 'index')) ?>" style="color: #585858;"><?php echo __('Xem Thêm') ;?></a></div>
 		</div>
 		<div class="contact_end">
         <div class="title_contact"><?php echo __('接続') ;?></div>

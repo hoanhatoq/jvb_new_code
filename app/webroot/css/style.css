@@ -905,7 +905,7 @@ a.mamoi {
 }
 .news{
 	width: 640px;
-	margin-left: 220px;
+	margin-left: 290px;
 	float:left;
 	margin-top: 50px;
 }
@@ -933,11 +933,12 @@ a.mamoi {
 .recruitment{
 	float: left;
 	margin-left: 35px;
-	margin-top: 25px;
+	margin-top: 15px;
+	width: 310px;
 }
 .see_more1{
 	float: right;
-	margin-top: 80px;
+	margin-top: -5px
 }
 .app1_image{
 	float: left;
